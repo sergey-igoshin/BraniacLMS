@@ -1,3 +1,4 @@
+
 {% extends 'base.html' %}
 
 {% block content %}
@@ -12,9 +13,11 @@
 </div>
 {% endif %}
 
+
 <div class="row">
 
   <div class="col-lg-8">
+
 
     {% for i in double_range %}
     <div class="card my-2">
@@ -51,8 +54,10 @@
             <input type="date" class="form-control" name="dateTo">
           </div>
 
+
           <button type="submit"
             class="btn btn-primary btn-block">Фильтровать</button>
+
         </form>
       </div>
     </div>
@@ -67,6 +72,7 @@
       <li class="page-item"><a class="page-link" href="{% url 'mainapp:news_paginator' 1 %}?param1=foobar">1</a></li>
       <li class="page-item"><a class="page-link" href="{% url 'mainapp:news_paginator' page=2 %}">2</a></li>
       {# <li class="page-item"><a class="page-link" href="{% url 'mainapp:news_paginator' three %}">3</a></li> #}
+
       <li class="page-item"><a class="page-link" href="#">Next</a></li>
     </ul>
   </nav>

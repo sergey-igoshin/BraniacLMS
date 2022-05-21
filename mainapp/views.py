@@ -28,6 +28,7 @@ class NewsWithPaginatorView(NewsPageView):
         return context
 
 
+
 class CoursesPageView(TemplateView):
     template_name = "mainapp/courses_list.html"
 
